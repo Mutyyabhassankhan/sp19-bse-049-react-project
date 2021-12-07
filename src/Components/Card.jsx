@@ -1,0 +1,23 @@
+import React from 'react'
+import { NavLink } from 'react-router-dom';
+import web from "../Images/web.png";
+import "../Styles/index.css";
+
+const Card = (props) => {
+    return ( 
+        <>
+            <div className="col-md-4 col-6 mx-auto">
+                <div className="card">
+                    <img src={props.imgsrc} className="card-img-top" alt={props.imgsrc} />
+                        <div className="card-body">
+                            <h5 className="card-title font-weight-bold">{props.title}</h5>
+                            <p className="card-text">Capture the moments.</p>
+                            <NavLink to="/contact" className="btn btn-primary "><strong>Book Now</strong></NavLink>
+                        </div>
+                    </div>
+            </div>
+        </>
+     );
+}
+ 
+export default Card;
