@@ -1,6 +1,6 @@
 import React from 'react'
-import Card from "./Card"
-import CardData from './CardData';
+// import Card from "./Card"
+// import CardData from './CardData';
 
 const Contact = (props) => {
 
@@ -30,7 +30,7 @@ const Contact = (props) => {
         if (answer) {
             alert("Form submitted successfully!");
         } else {
-            alert("Operation cancelled :( ");
+            alert("Operation cancelled");
         }
     }
 

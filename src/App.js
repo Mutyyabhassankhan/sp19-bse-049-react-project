@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import React from 'react'
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
@@ -9,6 +9,8 @@ import Home from './Components/Home';
 import Services from './Components/Services';
 import Contact from './Components/Contact';
 import About from './Components/About';
+import Product from './Components/Product';
+import ProductForm from './Components/ProductForm';
 import Background from '../src/Images/Home.jpg';
 
 function App() {
@@ -22,7 +24,7 @@ function App() {
           backgroundrepeat: "no-repeat",
           backgroundAttachment: "fixed",
           height: "100vh",
-          width: '100vw',
+          width: '100%',
           color: "white"
         }}>
       
@@ -33,6 +35,10 @@ function App() {
       <Route exact path="/about" element={<About />}/>
       <Route exact path="/services" element={<Services />}/>
       <Route exact path="/contact" element={<Contact />}/>
+      <Route exact path="/product" element={<Product />}/>
+      <Route path="/products/create" element={<ProductForm />} />
+      <Route path="/products/edit/:id" element={<ProductForm />} />
+
       <Route path="*" element={<Navigate to ="/" />}/>
 
     </Routes>

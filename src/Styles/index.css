@@ -9,6 +9,12 @@
     text-transform: capitalize;
     color: white !important;
 }
+.navbar-toggler{
+    color: white !important;
+}
+.navbar-toggler-icon{
+    color: white !important;
+}
 .navbar-brand {
     font-size: 1.5rem !important;
     color:White !important;

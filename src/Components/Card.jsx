@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import web from "../Images/web.png";
 import "../Styles/index.css";
 
 const Card = (props) => {
